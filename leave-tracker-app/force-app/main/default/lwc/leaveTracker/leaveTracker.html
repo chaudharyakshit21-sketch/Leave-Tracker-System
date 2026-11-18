@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="Leave Tracker" icon-name="standard:event">
+        <div class="slds-p-horizontal_medium slds-p-bottom_medium">
+            <c-leave-balance-card></c-leave-balance-card>
+            <div class="slds-grid slds-wrap slds-gutters slds-m-top_medium">
+                <div class="slds-col slds-size_1-of-1 slds-large-size_5-of-12 slds-m-bottom_medium">
+                    <c-leave-request-form onleavesubmitted={handleLeaveChange}></c-leave-request-form>
+                </div>
+                <div class="slds-col slds-size_1-of-1 slds-large-size_7-of-12">
+                    <c-leave-history onleavecancelled={handleLeaveChange}></c-leave-history>
+                </div>
+            </div>
+        </div>
+    </lightning-card>
+</template>

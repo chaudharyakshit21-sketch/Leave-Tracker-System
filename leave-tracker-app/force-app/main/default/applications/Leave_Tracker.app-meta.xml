@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Request leave, track balances and follow approvals</description>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <label>Leave Tracker</label>
+    <navType>Standard</navType>
+    <tabs>Leave_Tracker_Page</tabs>
+    <tabs>Leave_Request__c</tabs>
+    <tabs>Leave_Balance__c</tabs>
+    <uiType>Lightning</uiType>
+</CustomApplication>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Sent to approvers when a leave request is submitted</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Leave Approval Request</name>
+    <style>none</style>
+    <subject>Leave approval needed: {!Leave_Request__c.Name}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

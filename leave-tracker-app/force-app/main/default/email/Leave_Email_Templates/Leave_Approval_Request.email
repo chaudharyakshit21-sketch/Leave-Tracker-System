@@ -1,0 +1,16 @@
+Hello,
+
+{!Leave_Request__c.Employee__c} has requested leave and needs your approval.
+
+Request:    {!Leave_Request__c.Name}
+Leave type: {!Leave_Request__c.Leave_Type__c}
+From:       {!Leave_Request__c.Start_Date__c}
+To:         {!Leave_Request__c.End_Date__c}
+Days:       {!Leave_Request__c.Number_of_Days__c}
+Reason:     {!Leave_Request__c.Reason__c}
+
+Please approve or reject this request:
+{!Leave_Request__c.Link}
+
+Thank you,
+Leave Tracker

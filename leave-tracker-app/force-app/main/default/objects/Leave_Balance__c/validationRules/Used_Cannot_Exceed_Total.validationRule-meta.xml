@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Used_Cannot_Exceed_Total</fullName>
+    <active>true</active>
+    <description>Used days cannot exceed total entitlement.</description>
+    <errorConditionFormula>Used_Days__c &gt; Total_Days__c</errorConditionFormula>
+    <errorDisplayField>Used_Days__c</errorDisplayField>
+    <errorMessage>Used days cannot exceed total entitlement.</errorMessage>
+</ValidationRule>

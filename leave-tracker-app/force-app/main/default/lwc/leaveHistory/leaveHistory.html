@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="My Leave Requests" icon-name="standard:history">
+        <div class="slds-p-horizontal_medium">
+            <template if:true={hasRequests}>
+                <lightning-datatable key-field="Id" data={requests} columns={columns}
+                    hide-checkbox-column onrowaction={handleRowAction}></lightning-datatable>
+            </template>
+            <template if:true={isEmpty}>
+                <p class="slds-text-color_weak slds-p-vertical_medium">You have not requested any leave yet.</p>
+            </template>
+            <template if:true={error}>
+                <p class="slds-text-color_error">{error}</p>
+            </template>
+        </div>
+    </lightning-card>
+</template>

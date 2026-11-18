@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Valid_Balance_Year</fullName>
+    <active>true</active>
+    <description>Enter a valid 4-digit year.</description>
+    <errorConditionFormula>OR(Balance_Year__c &lt; 2000, Balance_Year__c &gt; 2100)</errorConditionFormula>
+    <errorDisplayField>Balance_Year__c</errorDisplayField>
+    <errorMessage>Enter a valid 4-digit year.</errorMessage>
+</ValidationRule>

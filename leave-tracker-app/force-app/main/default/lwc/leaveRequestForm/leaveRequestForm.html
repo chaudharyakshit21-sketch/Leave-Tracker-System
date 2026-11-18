@@ -1,0 +1,30 @@
+<template>
+    <lightning-card title="Request Leave" icon-name="standard:work_order">
+        <div class="slds-p-horizontal_medium">
+            <template if:true={isSaving}>
+                <lightning-spinner alternative-text="Submitting" size="small"></lightning-spinner>
+            </template>
+
+            <lightning-combobox name="leaveType" label="Leave Type" value={leaveType}
+                options={typeOptions} required onchange={handleChange}></lightning-combobox>
+
+            <lightning-input type="date" name="startDate" label="Start Date" value={startDate}
+                required onchange={handleChange}></lightning-input>
+
+            <lightning-input type="date" name="endDate" label="End Date" value={endDate}
+                required onchange={handleChange}></lightning-input>
+
+            <p class="slds-m-vertical_small">
+                Working days requested: <strong>{calculatedDays}</strong>
+            </p>
+
+            <lightning-textarea name="reason" label="Reason" value={reason}
+                max-length="4000" onchange={handleChange}></lightning-textarea>
+        </div>
+        <div slot="footer" class="slds-text-align_right">
+            <lightning-button label="Clear" onclick={resetForm} class="slds-m-right_x-small"></lightning-button>
+            <lightning-button variant="brand" label="Submit for Approval" onclick={handleSubmit}
+                disabled={isSaving}></lightning-button>
+        </div>
+    </lightning-card>
+</template>

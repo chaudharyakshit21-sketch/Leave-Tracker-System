@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_Required_For_Long_Leave</fullName>
+    <active>true</active>
+    <description>Please provide a reason for leave longer than 3 days.</description>
+    <errorConditionFormula>AND(NOT(ISPICKVAL(Status__c, "Cancelled")), Number_of_Days__c &gt; 3, ISBLANK(Reason__c))</errorConditionFormula>
+    <errorDisplayField>Reason__c</errorDisplayField>
+    <errorMessage>Please provide a reason for leave longer than 3 days.</errorMessage>
+</ValidationRule>

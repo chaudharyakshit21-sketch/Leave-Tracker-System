@@ -1,0 +1,8 @@
+Hi {!Leave_Request__c.Employee__c},
+
+Good news - your {!Leave_Request__c.Leave_Type__c} leave from {!Leave_Request__c.Start_Date__c} to {!Leave_Request__c.End_Date__c} ({!Leave_Request__c.Number_of_Days__c} working days) has been APPROVED.
+
+View request: {!Leave_Request__c.Link}
+
+Enjoy your time off!
+Leave Tracker
